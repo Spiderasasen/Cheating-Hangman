@@ -17,4 +17,8 @@ int main() {
     cout << "Getting the dictunary list" << endl;
     vector<string> dict = import_files("1000-most-common-words.txt");
     cout << dict.size() << endl;
+
+    cout << "getting the dictunary words with 5 letters in the word" << endl;
+    vector<string> words = filter_size(dict, 5);
+    cout << words.size() << endl;
 }
