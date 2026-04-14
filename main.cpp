@@ -21,4 +21,8 @@ int main() {
     cout << "getting the dictunary words with 5 letters in the word" << endl;
     vector<string> words = filter_size(dict, 5);
     cout << words.size() << endl;
+
+    cout << "getting a random word from the dictunary" << endl;
+    string word = random_word(dict);
+    cout << word << endl;
 }

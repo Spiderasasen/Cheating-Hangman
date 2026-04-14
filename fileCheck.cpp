@@ -7,6 +7,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <random>
 
 using namespace std;
 
@@ -41,4 +42,13 @@ vector<string> filter_size(const vector<string>& lines, int size) {
         }
     }
     return new_list;
+}
+
+//getting a random word from the list
+string random_word(const vector<string>& lines) {
+    int size = lines.size();
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> distr(1, size);
+    return lines[distr(gen)];
 }
