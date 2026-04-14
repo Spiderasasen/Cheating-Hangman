@@ -1,8 +1,13 @@
+//
+// Created by Diego Diaz on 4/14/2026.
+//
+
 #include <iostream>
 #include <ostream>
-//
-// Created by spide on 4/14/2026.
-//
+
+//New system that will be used a lot
+using namespace std;
+
 int main() {
-    std::cout << "Hello World!" << std::endl;
+    cout << "Hello World!" << std::endl;
 }
