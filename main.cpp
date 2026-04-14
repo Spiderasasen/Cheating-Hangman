@@ -4,10 +4,17 @@
 
 #include <iostream>
 #include <ostream>
+#include <string>
+#include <vector>
+
+//imports of other classes
+#include "fileCheck.h"
 
 //New system that will be used a lot
 using namespace std;
 
 int main() {
-    cout << "Hello World!" << std::endl;
+    cout << "Getting the dictunary list" << endl;
+    vector<string> dict = import_files("1000-most-common-words.txt");
+    cout << dict.size() << endl;
 }
