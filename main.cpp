@@ -9,6 +9,7 @@
 
 //imports of other classes
 #include "fileCheck.h"
+#include "filters.h"
 
 //New system that will be used a lot
 using namespace std;
