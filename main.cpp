@@ -14,15 +14,10 @@
 using namespace std;
 
 int main() {
-    cout << "Getting the dictunary list" << endl;
+    // getting all words from  a dictnary
     vector<string> dict = import_files("1000-most-common-words.txt");
-    cout << dict.size() << endl;
 
-    cout << "getting the dictunary words with 5 letters in the word" << endl;
-    vector<string> words = filter_size(dict, 5);
-    cout << words.size() << endl;
-
-    cout << "getting a random word from the dictunary" << endl;
+    //getting a random word from the dicrinary
     string word = random_word(dict);
-    cout << word << endl;
+    cout << "Random Word: " << word << endl;
 }
