@@ -24,16 +24,59 @@ int main() {
 
     //getting a gist of the word from just getting the length of the word
     vector<string> possibale_words = filter_size(dict, word.size());
-    cout << "Possible Words: " << possibale_words.size() << endl;
 
-    //entering a letter
-    char letter_entered;
-    cout << "Please enter a letter: ";
-    cin >> letter_entered;
+    //doing the main game logic
+    bool result = true;
 
-    //filterig out via the letter and the size of the word
-    vector<string> test = filtering_via_word(possibale_words, letter_entered);
-    for (string words: test) {
-        cout << words << endl;
-    }
+    //asking for diffculty
+    char choice;
+    cout << "would you like to play in hard difficulty(y/n): ";
+    cin >> choice;
+
+    choice = tolower(choice);
+
+    do {
+        int lives = 0;
+        //number of tries a player has
+        if (choice == 'y') {
+            lives = word.size();
+        }
+        else {
+            lives = 5;
+        }
+
+        cout << "How many lives you got: " << lives << endl;
+
+        //getting the size of the word
+        for (char letter : word) {
+            cout << "_";
+        }
+        cout << "\n" << endl;
+
+        //amount of guess and letters you missed
+        vector<string> guesses;
+        vector<string> missed_words;
+
+        //displaying the vectors
+        cout << "Your Guesses: " << endl;
+        for (auto i : guesses) {
+            cout << i << ", ";
+        }
+        cout << endl;
+
+        cout << "Letters that are missed: " << endl;
+        for (auto i : missed_words) {
+            cout << i << ", ";
+        }
+        cout << endl;
+
+        //entering a letter
+        char letter_entered;
+        cout << "Please enter a letter: ";
+        cin >> letter_entered;
+
+        //filterig out via the letter and the size of the word
+        vector<string> test = filtering_via_word(possibale_words, letter_entered);
+
+    }while (result);
 }
