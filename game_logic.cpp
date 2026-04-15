@@ -54,6 +54,18 @@ void Game::printStatus() const {
     //current pattern of the game
     cout << "\nPattern: " << pattern << endl;
 
+    //shows the player the amount of possibale options
+    cout << "Possible words left: " << possible_words.size() << endl;
+
+    //shows the player if there are 10 or less possible options, it will print out the possible words
+    if (possible_words.size() <= 10) {
+        cout << "Possible words: ";
+        for (auto i : possible_words) {
+            cout << i << ", ";
+        }
+        cout << endl;
+    }
+
     //what guesses the user entered
     cout << "Guesses: ";
     for (char c : guesses) cout << c << " ";

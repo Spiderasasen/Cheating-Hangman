@@ -9,14 +9,13 @@
 
 //imports of other classes
 #include "fileCheck.h"
-#include "filters.h"
 #include "game_logic.h"
 
 //New system that will be used a lot
 using namespace std;
 
 int main() {
-    vector<string> dict = import_files("1000-most-common-words.txt");
+    vector<string> dict = import_files("dictionary.txt");
 
     Game game(dict);
 
