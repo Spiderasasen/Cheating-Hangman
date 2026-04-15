@@ -30,4 +30,9 @@ A filter system to filter out the words
 - we will uses this system to include all guesses to have a better idea of which words could be included
   - meaning that all your guesses are possible options for your final result
 
+# Game Logic
+Where the whole game logic will go in
+- this will include the fundamentals of normal hangman
+- has also the system of the cheating system
+
 ## THIS PLAN WAS CREATED ON 4/14/26 AND IS SUBJECT TO CHANGE IN THE FUTURE ##
