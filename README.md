@@ -10,8 +10,15 @@ a class that can get dictionaries and also return a certain number of characters
 
 ## Class 2
 A filter system to filter out the words
-- If the word might start with the letter A, it will filter out the words that start with the letter A
-Meaning that we need to get the original "filtered" list, then filter it
-(might filter with regx to make life a bit simpler, but idk)
+- using regular expressions we will filter the words as so
+  - make a new list to hold the words
+  - going through a loop of words with the same length of the random word
+    - if the word begins with the selected letter, append to the new list
+    - if the word ends with the selected letter, append to the new list
+    - if the word begins and ends with the selected letter, append to the list
+    - if the word begins with the letter. but has another occurrence of the letter in the word, then append to the new list
+    - if the word ends with the letter, but there is another occurrence of the letter in the word, then append to the new list
+    - if the word the letter anywhere in the middle of the word (not at the beginning or end of the word) then append to the new list
+  - ## In short only return words that have the selected letter in the word ##
 
 ## THIS PLAN WAS CREATED ON 4/14/26 AND IS SUBJECT TO CHANGE IN THE FUTURE ##
