@@ -36,7 +36,15 @@ void Game::initializeWordLength(int length) {
 
     //little mini mechanic
     if (hard_mode) //if hard mode is avilible, then whatever the length of the word, is the number of lives the user has
-        lives = length;
+        if (length == 5) {
+            lives = 3;
+        }
+        else if (length > 5) {
+            lives = (length - 3);
+        }
+        else {
+            lives = length;
+        }
     else
         lives = 5;
 }
