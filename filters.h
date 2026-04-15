@@ -14,4 +14,6 @@ using namespace std;
 //filtering the size of the dictunary
 vector<string>filter_size(const vector<string>& lines, int size);
 
+vector<string> filtering_via_word(const vector<string>& lines, char letter_chossen);
+
 #endif //CHEATING_HANGMAN_FILTERS_H

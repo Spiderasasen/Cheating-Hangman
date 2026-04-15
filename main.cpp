@@ -25,4 +25,15 @@ int main() {
     //getting a gist of the word from just getting the length of the word
     vector<string> possibale_words = filter_size(dict, word.size());
     cout << "Possible Words: " << possibale_words.size() << endl;
+
+    //entering a letter
+    char letter_entered;
+    cout << "Please enter a letter: ";
+    cin >> letter_entered;
+
+    //filterig out via the letter and the size of the word
+    vector<string> test = filtering_via_word(possibale_words, letter_entered);
+    for (string words: test) {
+        cout << words << endl;
+    }
 }
