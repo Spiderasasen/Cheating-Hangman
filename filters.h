@@ -16,4 +16,6 @@ vector<string>filter_size(const vector<string>& lines, int size);
 
 vector<string> filtering_via_word(const vector<string>& lines, char letter_chossen);
 
+string build_pattern(const string& word, char guess);
+
 #endif //CHEATING_HANGMAN_FILTERS_H
