@@ -20,4 +20,8 @@ int main() {
     //getting a random word from the dicrinary
     string word = random_word(dict);
     cout << "Random Word: " << word << endl;
+
+    //getting a gist of the word from just getting the length of the word
+    vector<string> possibale_words = filter_size(dict, word.size());
+    cout << "Possible Words: " << possibale_words.size() << endl;
 }
