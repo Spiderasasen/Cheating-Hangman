@@ -13,9 +13,6 @@ using namespace std;
 //getting the dictinary and putting it into a list
 vector<string>import_files(const string& filename);
 
-//filtering the size of the dictunary
-vector<string>filter_size(const vector<string>& lines, int size);
-
 //getting a random word
 string random_word(const vector<string>& lines);
 
